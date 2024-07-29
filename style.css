@@ -13,6 +13,10 @@ body{
     background-color: rgb(71,85,105);
 }
 
+.text-primary{
+     color: rgba(13, 19, 33, 0.7);
+}
+
 .navber-all{
     display:flex ;
     justify-content: space-between;
@@ -75,6 +79,28 @@ body{
     top: 40%;
     left: 35%;
 }
+
+/* Population section */
+.popular-card{
+    min-height: 200px;
+    /* border: 1px solid red; */
+    padding: 10px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.348);
+    border-radius: 10px;
+}
+.popular-card img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.popular-all{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+
 /* medium device */
 @media  screen and (max-width:800px) {
 
@@ -88,6 +114,9 @@ body{
     }
     .fifty{
         left: 20%;
+    }
+    .popular-all{
+        grid-template-columns: repeat(2,1fr);
     }
    
 }
@@ -109,6 +138,9 @@ body{
     }
     .banner-child{
         width: 100%;
+    }
+    .popular-all{
+        grid-template-columns: repeat(1,1fr);
     }
 }
 

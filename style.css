@@ -34,6 +34,47 @@ body{
 .nav-humburger-menu{
     display: none;
 }
+.main-content{
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid red ;
+}
+.banner-child{
+    width: 47%;
+    position: relative;
+    /* border: 2px solid green; */
+}
+.banner-child img{
+    width: 100%;
+    border-radius: 10px;
+}
+.banner-main{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(242,242,242);
+}
+.banner-btn{
+    border: 1px solid gray;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.fifty{
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    width: max-content;
+    padding: 20px 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
 /* medium device */
 @media  screen and (max-width:800px) {
 
@@ -45,7 +86,9 @@ body{
     .navber-all>div{
         margin-top: 20px;
     }
-    
+    .fifty{
+        left: 20%;
+    }
    
 }
 /* mobile device */
@@ -59,6 +102,13 @@ body{
     }
     .navber-all{
         flex-direction: row;
+    }
+    .banner-main{
+        flex-direction: column;
+     
+    }
+    .banner-child{
+        width: 100%;
     }
 }
 

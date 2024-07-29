@@ -17,15 +17,49 @@ body{
     display:flex ;
     justify-content: space-between;
     margin: 0 auto;
-    /* color: white; */
-    border: 1px solid green;
+    color: white;
+    /* border: 4px solid rgb(26, 0, 128); */
     max-width: 1440px;
     padding: 20px;
 }
-/* .nav-btn  button{
+.nav-btn  button{
     margin-right: 40px;
     background-color: black;
     color: aliceblue;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
     
-} */
+}
+.nav-humburger-menu{
+    display: none;
+}
+/* medium device */
+@media  screen and (max-width:800px) {
+
+    .navber-all{
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .navber-all>div{
+        margin-top: 20px;
+    }
+    
+   
+}
+/* mobile device */
+@media  screen and (max-width:576px){
+    .nav-humburger-menu{
+        display: block;
+    }
+    .nav-btn{
+      
+        display: none;
+    }
+    .navber-all{
+        flex-direction: row;
+    }
+}
+
 

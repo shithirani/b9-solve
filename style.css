@@ -222,6 +222,9 @@ position: relative;
     .popular-all{
         grid-template-columns: repeat(2,1fr);
     }
+    .qna-btn{
+        margin-left: 40%;
+    }
    
 }
 /* mobile device */

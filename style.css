@@ -41,7 +41,7 @@ body{
 .main-content{
     max-width: 1440px;
     margin: 0 auto;
-    border: 1px solid red ;
+    /* border: 1px solid red ; */
 }
 .banner-child{
     width: 47%;
@@ -158,6 +158,51 @@ position: relative;
     border-radius: 70px;
     filter:brightness(30%);
 }
+/* qna section */
+.qna-section{
+  margin-top: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.qna-child{
+    width: 47%;
+    /* border: 1px solid green; */
+}
+.qna-child img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.input-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.input-field{
+    width: 47%;
+    /* border: 2px solid purple; */
+}
+.input-field-text-area{
+    width: 100%;
+}
+.input-main input,textarea,select{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+
+  
+}
+.qna-btn{
+  background-color: #4704e2;
+  color: white;
+  padding: 20px 70px;
+  border-radius: 20px;
+  border: none; 
+  margin-left: 71%; 
+}
 
 
 /* medium device */
@@ -191,16 +236,20 @@ position: relative;
     .navber-all{
         flex-direction: row;
     }
-    .banner-main{
+    .banner-main , .qna-section{ 
         flex-direction: column;
      
     }
-    .banner-child{
+    .banner-child ,.input-field ,.qna-child{
         width: 100%;
+    }
+    .qna-btn{
+        margin-left: 50%;
     }
     .popular-all{
         grid-template-columns: repeat(1,1fr);
     }
+
 }
 
 

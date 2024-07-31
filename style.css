@@ -238,6 +238,7 @@ position: relative;
       
         display: none;
     }
+    
     .navber-all{
         flex-direction: row;
     }
